@@ -20,7 +20,8 @@ public class EmailSenderController {
 
     @GetMapping("/email")
     public void sendEmail(){
-        emailSenderService.sendEmail("test@gmail.com","Hey there!", "Test");
+    	String email = "";
+        emailSenderService.sendEmail(email,"Hey there!", "Test");
     }
 
 }
